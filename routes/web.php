@@ -29,6 +29,7 @@ Route::get('/locanesNat','LocalesController@mostrarLocales');
 
 Route::get('/comidas','ComidasController@show');
 Route::resource('comidas','ComidasController');
+Route::get('comidas2', 'Api\localesController@index');
 
 Route::get('/categorias','CategoriasController@index');
 Route::get('/crearCategoria','CategoriasController@crear');

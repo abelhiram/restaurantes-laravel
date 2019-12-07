@@ -16,3 +16,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('register', 'Api\RegisterController@register');
+Route::get('comidas2', 'Api\localesController@index');
+Route::resource('comidas','Api\localesController');
