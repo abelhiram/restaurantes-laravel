@@ -29,6 +29,7 @@ Route::group([
     });
 });
 
+Auth::routes();
 
 Route::post('register', 'Api\RegisterController@register');
 Route::get('comidas2', 'Api\localesController@index');
